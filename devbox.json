@@ -1,0 +1,18 @@
+{
+    "packages": [
+        "php@7.4",
+        "php74Packages.composer@latest"
+    ],
+    "env": {
+        "PATH": "$PWD/vendor/bin:$PATH"
+    },
+    "shell": {
+        "scripts": {
+            "lint": [
+                "psalm",
+                "php-cs-fixer check --diff"
+            ],
+            "test": ["kahlan"]
+        }
+    }
+}
